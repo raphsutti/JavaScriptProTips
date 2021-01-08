@@ -11,15 +11,13 @@ const lvl0bad = Object.assign(pikachu , stats)
 const lvl1bad = Object.assign(pikachu , {hp:45})
 
 // Good
-
 const lvl0 = {...pikachu, ...stats}
-const lvl1 = {...pikachu, hp:45}
+const lvl1 = {...pikachu, ...stats, hp:45}
 console.log({lvl0})
 console.log({lvl1})
 
 
 // Array
-
 let pokemon = ['Arbok', 'Raichu', 'Sandshrew']
 
 // Bad
@@ -34,5 +32,5 @@ pokemon = [...pokemon, 'Bulbasaur', 'Metapod', 'Weedle']
 pokemon = ['Bulbasaur', 'Metapod', 'Weedle', ...pokemon ]
 // splice
 pokemon = ['Bulbasaur', ...pokemon, 'Metapod', 'Weedle' ]
-
+console.log(pokemon)
 
