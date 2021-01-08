@@ -1,1 +1,1 @@
-[Tutorial](https://youtu.be/Mus_vwhTCq0)
+[JavaScript Pro Tips](https://youtu.be/Mus_vwhTCq0)
