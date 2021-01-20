@@ -11,27 +11,8 @@ const newPeople = people.map(({ id, ...obj }) => ({
 }));
 
 console.log(people);
-
-`[{
-  "id": 123,
-  "name": "smith"
-}, {
-  "id": 456,
-  "name": "jane"
-}, {
-  "id": 789,
-  "name": "tyrone"
-}] `;
+// [{ "id": 123, "name": "smith" }, { "id": 456, "name": "jane" }, { "id": 789, "name": "tyrone" }]
+// people did not change after map()
 
 console.log(newPeople);
-
-`[{
-  "name": "smith",
-  "ssid": 123
-}, {
-  "name": "jane",
-  "ssid": 456
-}, {
-  "name": "tyrone",
-  "ssid": 789
-}] `;
+// [{ "name": "smith", "ssid": 123 }, { "name": "jane", "ssid": 456 }, { "name": "tyrone", "ssid": 789 }]
