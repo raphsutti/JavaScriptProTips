@@ -16,3 +16,10 @@ console.log(people);
 
 console.log(newPeople);
 // [{ "name": "smith", "ssid": 123 }, { "name": "jane", "ssid": 456 }, { "name": "tyrone", "ssid": 789 }]
+
+const obj = { firstname: "john", age: 12 };
+
+// Rename one object key firstname -> nickname
+const { firstname, ...mappedObj } = { ...obj, nickname: obj.firstname };
+console.log(mappedObj);
+// {  "age": 12,  "nickname": "john"  }
